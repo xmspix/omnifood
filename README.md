@@ -1,3 +1,3 @@
 HTML template 1
 
-https://xmspix.github.io/omnifood
+https://xmspix.github.io/omnifood/
