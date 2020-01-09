@@ -1,0 +1,10 @@
+@mixin Flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// other flex options
+// flex: 0 0 50px;
+// flex-direction: column;
+// writing-mode: vertical-rl;

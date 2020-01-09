@@ -1,0 +1,65 @@
+/* ---- Buttons ---- */
+
+@mixin btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+@mixin btn-hover-full {
+  background-color: $primaryColor;
+  border: 1px solid $primaryColor;
+  color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: $primaryColorHover;
+  }
+}
+
+input[type="submit"] {
+  @include btn;
+  @include btn-hover-full;
+}
+
+.btn-full {
+  &:link,
+  &:visited {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    color: #fff;
+    margin-right: 15px;
+  }
+  &:hover,
+  &:active {
+    border: 1px solid $primaryColorHover;
+  }
+}
+
+.btn-ghost {
+  &:link,
+  &:visited {
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+  }
+  &:hover,
+  &:active {
+    border: 1px solid $primaryColorHover;
+    color: #fff;
+  }
+}
+
+.btn {
+  &:link,
+  &:visited {
+    @include btn;
+  }
+  &:hover,
+  &:active {
+    background-color: $primaryColorHover;
+  }
+}

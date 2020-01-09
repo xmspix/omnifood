@@ -1,0 +1,62 @@
+/* -------------------------------------- */
+/* HOW IT WORKS */
+/* -------------------------------------- */
+.section-steps {
+  background-color: $grey;
+}
+
+.steps-box {
+  margin-top: 30px;
+
+  &:first-child {
+    text-align: right;
+    padding-right: 3%;
+  }
+  &:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+  }
+}
+
+.works-step {
+  margin-bottom: 50px;
+
+  &:last-of-type {
+    margin-bottom: 80px;
+  }
+
+  div {
+    color: $primaryColor;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid $primaryColor;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    padding: 5px;
+  }
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.btns-app {
+  display: inline-block;
+  width: 100%;
+
+  .btn-app {
+    img {
+      height: 50px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    &:link,
+    &:visited {
+      border: 0;
+    }
+  }
+}
